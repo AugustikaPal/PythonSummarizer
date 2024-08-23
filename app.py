@@ -1,3 +1,4 @@
+
 import streamlit as st
 from langchain.prompts import PromptTemplate
 from langchain_groq import ChatGroq
@@ -168,4 +169,3 @@ if st.session_state.history:
         if st.sidebar.button(topic):
             st.markdown(f"### {topic}")
             st.text_area("Summary", value=st.session_state.history[topic], height=150, disabled=True)
-
